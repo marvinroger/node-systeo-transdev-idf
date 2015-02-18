@@ -32,7 +32,9 @@ describe('Schedules', function(){
     it('should return a list of schedules', function(done){
       systeoTransdevIDF.getSchedules(268435472, 'GARIBALDI', function(err, schedules) {
         should.not.exist(err);
-        schedules.should.not.be.empty;
+        if (!schedules.noMoreToday) {
+          schedules.should.not.be.empty;
+        }
         done();
       });
     });
