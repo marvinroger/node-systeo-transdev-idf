@@ -12,8 +12,8 @@
   },
   "author": "Marvin Roger <bonjourmarvin@marvinroger.fr> (http://www.marvinroger.fr/)",
   "dependencies": {
-    "ahr2": "^2.3.2",
-    "htmlparser2": "^3.8.2"
+    "htmlparser2": "^3.8.2",
+    "request": "^2.53.0"
   },
   "devDependencies": {
     "chai": "^2.0.0",
