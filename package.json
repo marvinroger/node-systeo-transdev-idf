@@ -1,6 +1,6 @@
 {
   "name": "systeo-transdev-idf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Retrieves the next practical and theorical schedules of bus equiped with Systeo in Île-de-France. It now only works with the STRAV network.",
   "main": "index.js",
   "scripts": {
