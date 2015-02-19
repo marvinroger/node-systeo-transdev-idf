@@ -9,7 +9,7 @@ describe('Lines', function(){
       systeoTransdevIDF.getLines(function(err, lines) {
         if (err && err instanceof systeoTransdevIDF.ServerError === false) {
           throw err;
-        } else {
+        } else if (!err) {
           lines.should.have.property('J1');
         }
         done();
@@ -22,7 +22,7 @@ describe('Lines', function(){
       systeoTransdevIDF.getStops('268435472', function(err, stops) {
         if (err && err instanceof systeoTransdevIDF.ServerError === false) {
           throw err;
-        } else {
+        } else if (!err) {
           stops.should.have.property('GARIBALDI');
         }
         done();
@@ -39,7 +39,7 @@ describe('Schedules', function(){
       systeoTransdevIDF.getSchedules('268435472', 'GARIBALDI', function(err, schedules) {
         if (err && err instanceof systeoTransdevIDF.ServerError === false) {
           throw err;
-        } else {
+        } else if (!err) {
           if (!schedules.noMoreToday) {
             schedules.should.not.be.empty;
           }
