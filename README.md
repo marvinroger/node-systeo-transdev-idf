@@ -7,7 +7,10 @@ node-systeo-transdev
 This NPM module retrieves the next practical and theorical schedules of the bus equiped with Systeo in Île-de-France.
 It now only works with the STRAV network.
 
-Be careful as this is very experimental for now.
+**Be careful as this is very experimental for now.**
+
+**Unit testing fails a lot due to the server being unstable. As such, Error raised when line/stop doesn't exist,
+does not actually mean that the line/stop doesn't exist. I can't do more to correct this issue...**
 
 ## Features
 
