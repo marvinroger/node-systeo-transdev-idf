@@ -16,7 +16,7 @@ describe('Lines', function(){
   
   describe('#getStops()', function(){
     it('should return a list of stops (test with GARIBALDI)', function(done){
-      systeoTransdevIDF.getStops(268435472, function(err, stops) {
+      systeoTransdevIDF.getStops('268435472', function(err, stops) {
         should.not.exist(err);
         stops.should.have.property('GARIBALDI');
         done();
@@ -30,7 +30,7 @@ describe('Lines', function(){
 describe('Schedules', function(){
   describe('#getSchedules()', function(){
     it('should return a list of schedules', function(done){
-      systeoTransdevIDF.getSchedules(268435472, 'GARIBALDI', function(err, schedules) {
+      systeoTransdevIDF.getSchedules('268435472', 'GARIBALDI', function(err, schedules) {
         should.not.exist(err);
         if (!schedules.noMoreToday) {
           schedules.should.not.be.empty;
