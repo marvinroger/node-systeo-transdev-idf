@@ -14,7 +14,7 @@ Be careful as this is very experimental for now.
 * Get bus lines
 * Get stops
 * Get next schedules for a given bus line/stop
-* Work on both server and client side, with Browserify and minimal dependencies (for now bundled file is ~140ko minified)
+* Work on both server and client side, with Browserify and no dependencies for a tiny file
 
 ## Usage
 
